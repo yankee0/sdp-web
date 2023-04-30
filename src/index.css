@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.overlay{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.79) 66%, #1565c0 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  @apply w-full max-w-[1200px] p-5 block gap-3 md:flex mx-auto
+}
+
+.wrapperHeader {
+  @apply w-full max-w-[1200px] mx-auto
+}
+
+.button {
+  @apply flex gap-2 p-3 bg-primary items-center justify-center text-white rounded-md shadow-sm hover:shadow-xl transition-all duration-300
+}
+
+.falci {
+  clip-path: ellipse(50% 51% at 50% 50%);
+  min-width: 500px;
+  width: 120vw;
+  height: 100px;
+  left: auto;
+  right: auto;
+}
+
+.link{
+  @apply text-xs flex items-center gap-2 text-primary hover:gap-3 transition-all duration-300
+}
+
+.postImg{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.inputField{
+  @apply border rounded-md p-2 focus:outline focus:outline-offset-2 focus:outline-primary focus:outline-4 transition-all border-slate-300
+}
+
+.footerLink {
+  @apply text-secondary hover:text-primary hover:underline-offset-1  hover:underline transition-all duration-300
+}
+
+.headerLink{
+  @apply text-text hover:text-primary transition-all duration-300
+}
+
